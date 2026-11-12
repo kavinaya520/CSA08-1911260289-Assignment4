@@ -1,0 +1,2 @@
+# Standard library only (pathlib, csv, decimal, logging, tempfile, timeit, tracemalloc, ...). No pip install needed.
+# Python 3.12

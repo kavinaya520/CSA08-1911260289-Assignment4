@@ -1,0 +1,48 @@
+{
+ "rows": [
+  {
+   "day": 1,
+   "buggy": "ok",
+   "buggy_lines": 2,
+   "fixed_lines": 2
+  },
+  {
+   "day": 2,
+   "buggy": "ok",
+   "buggy_lines": 2,
+   "fixed_lines": 4
+  },
+  {
+   "day": 3,
+   "buggy": "ok",
+   "buggy_lines": 2,
+   "fixed_lines": 6
+  },
+  {
+   "day": 4,
+   "buggy": "CRASH AttributeError, not logged",
+   "buggy_lines": 1,
+   "fixed_lines": 8
+  },
+  {
+   "day": 5,
+   "buggy": "ok",
+   "buggy_lines": 2,
+   "fixed_lines": 10
+  },
+  {
+   "day": 6,
+   "buggy": "ok",
+   "buggy_lines": 1,
+   "fixed_lines": 11
+  },
+  {
+   "day": 7,
+   "buggy": "ok",
+   "buggy_lines": 3,
+   "fixed_lines": 14
+  }
+ ],
+ "fixed_lines": 14,
+ "buggy_lines": 3
+}

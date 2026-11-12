@@ -1,0 +1,5 @@
+Trace of one small file with a damaged line (data/trace)
+  2026-10-08.txt line 1: '192311001,2026-10-08,P'       -> counts[192311001] = [1, 0]
+  2026-10-08.txt line 2: '192311002,2026-10-08,Q'       -> DAMAGED (invalid status 'Q')
+  2026-10-08.txt line 3: '192311001,2026-10-08,A'       -> counts[192311001] = [1, 1]
+  final counts: {'192311001': [1, 1]} | damaged: 1

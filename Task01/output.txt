@@ -1,0 +1,26 @@
+Original script on mess_oct.txt
+Bala 1800
+Farook 950
+Total 2750
+Repaired script on mess_oct.txt
+Arun Kumar 1250.50
+Bala 1800
+Elan 2100.75
+Farook 950
+Total 6101.25
+Rejected lines:
+  line 3: '192311003,Chitra,abc' -> amount 'abc' is not a number
+  line 4: '192311004,Divya' -> expected 3 fields, found 2
+
+The original silently lost 3351.25 rupees (1250.50 and 2100.75 failed int() and were swallowed by 'except: pass')
+Defence word count: 74 (limit 100)
+Missing file -> FileNotFoundError: [Errno 2] No such file or directory: 'no_such_file.txt'
+
+Alternative: f.read() / f.readlines() against iterating the file, 50,000 lines
+  file size 1,588,890 bytes
+  method            time (s)  peak memory (KB)
+  f.read()            0.0190             5,496
+  f.readlines()       0.0175             4,001
+  iteration           0.0159                22
+  all three give the same total: True
+  building the 50,000-line report: repeated + 1.1477 s | list/join 0.0068 s

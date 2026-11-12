@@ -1,0 +1,28 @@
+{
+ "rows": [
+  {
+   "s": 50,
+   "once_reads": 1500,
+   "once_s": 0.001,
+   "per_reads": 75000,
+   "per_s": 0.0307,
+   "same": true
+  },
+  {
+   "s": 100,
+   "once_reads": 3000,
+   "once_s": 0.0015,
+   "per_reads": 300000,
+   "per_s": 0.086,
+   "same": true
+  },
+  {
+   "s": 200,
+   "once_reads": 6000,
+   "once_s": 0.0022,
+   "per_reads": 1200000,
+   "per_s": 0.3411,
+   "same": true
+  }
+ ]
+}

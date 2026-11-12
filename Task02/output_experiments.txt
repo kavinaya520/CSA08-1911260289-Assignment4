@@ -1,0 +1,5 @@
+30 daily files, s students (one line per student per file, l = s)
+    s | once: line reads |  once (s) | per student: reads | per student (s) | same
+   50 |            1,500 |    0.0010 |             75,000 |          0.0307 | True
+  100 |            3,000 |    0.0015 |            300,000 |          0.0860 | True
+  200 |            6,000 |    0.0022 |          1,200,000 |          0.3411 | True

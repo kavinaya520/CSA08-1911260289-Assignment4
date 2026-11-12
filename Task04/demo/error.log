@@ -1,0 +1,7 @@
+2026-11-11 09:22:48,477 ERROR day 4 record 1 is damaged: None
+Traceback (most recent call last):
+  File "/home/claude/CSA08-1911260289-Assignment4/Task04/library.py", line 29, in add_returns_fixed
+    f.write(f"day {day}: {title.upper()}\n")
+                          ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+

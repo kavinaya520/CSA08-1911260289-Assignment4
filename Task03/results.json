@@ -1,0 +1,79 @@
+{
+ "failures": [
+  {
+   "failure": "missing folder",
+   "expected": "FileNotFoundError",
+   "observed": "FileNotFoundError"
+  },
+  {
+   "failure": "missing file",
+   "expected": "FileNotFoundError",
+   "observed": "FileNotFoundError"
+  },
+  {
+   "failure": "permission denied",
+   "expected": "PermissionError",
+   "observed": "no exception"
+  },
+  {
+   "failure": "wrong encoding (UTF-16)",
+   "expected": "UnicodeDecodeError",
+   "observed": "UnicodeDecodeError"
+  },
+  {
+   "failure": "damaged line: 2 fields",
+   "expected": "InvalidRecord",
+   "observed": "InvalidRecord"
+  },
+  {
+   "failure": "damaged line: bad date",
+   "expected": "InvalidRecord",
+   "observed": "InvalidRecord"
+  },
+  {
+   "failure": "damaged line: no [2]",
+   "expected": "IndexError",
+   "observed": "IndexError"
+  },
+  {
+   "failure": "non-number text",
+   "expected": "ValueError",
+   "observed": "ValueError"
+  },
+  {
+   "failure": "empty file",
+   "expected": "none (0 lines)",
+   "observed": "no exception"
+  }
+ ],
+ "rows": [
+  {
+   "bad": 0.0,
+   "eafp_us": 0.13,
+   "lbyl_us": 0.104
+  },
+  {
+   "bad": 0.01,
+   "eafp_us": 0.126,
+   "lbyl_us": 0.1
+  },
+  {
+   "bad": 0.1,
+   "eafp_us": 0.149,
+   "lbyl_us": 0.104
+  },
+  {
+   "bad": 0.5,
+   "eafp_us": 0.271,
+   "lbyl_us": 0.108
+  }
+ ],
+ "correct": [
+  2,
+  1
+ ],
+ "misuse": [
+  0,
+  1
+ ]
+}

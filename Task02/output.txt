@@ -1,0 +1,10 @@
+Attendance report (out/attendance_report.csv)
+  192311001: present 4 of 4 = 100.00%
+  192311002: present 3 of 4 = 75.00%
+  192311003: present 1 of 3 = 33.33%
+  192311004: present 3 of 3 = 100.00%
+  192311005: present 2 of 4 = 50.00%
+Below 75% (out/below75.txt): ['192311003 33.33', '192311005 50.00']
+Damaged lines (out/damaged.log):
+  2026-10-02.txt line 4: invalid status 'X': '192311004,2026-10-02,X'
+  2026-10-03.txt line 3: expected 3 fields, found 1: '192311003'

@@ -1,0 +1,26 @@
+{
+ "lost": "3351.25",
+ "total": "6101.25",
+ "rejected": 2,
+ "size": 1588890,
+ "rows": [
+  {
+   "method": "f.read()",
+   "time": 0.019,
+   "peak_kb": 5496
+  },
+  {
+   "method": "f.readlines()",
+   "time": 0.0175,
+   "peak_kb": 4001
+  },
+  {
+   "method": "iteration",
+   "time": 0.0159,
+   "peak_kb": 22
+  }
+ ],
+ "t_plus": 1.1477,
+ "t_join": 0.0068,
+ "defence_words": 74
+}

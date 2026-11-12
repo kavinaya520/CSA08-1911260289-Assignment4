@@ -1,0 +1,24 @@
+Evidence: the log file after each day of the week
+day | original (mode w)                              | repaired (mode a)     
+  1 | ok, file: 2 lines                              | 2 lines, 44 bytes     
+  2 | ok, file: 2 lines                              | 4 lines, 78 bytes     
+  3 | ok, file: 2 lines                              | 6 lines, 120 bytes    
+  4 | CRASH AttributeError, not logged, file: 1 lines | 8 lines, 157 bytes    
+  5 | ok, file: 2 lines                              | 10 lines, 197 bytes   
+  6 | ok, file: 1 lines                              | 11 lines, 221 bytes   
+  7 | ok, file: 3 lines                              | 14 lines, 273 bytes   
+
+Contents of library_buggy.txt after the week:
+  day 7: DIGITAL LOGIC
+  day 7: CALCULUS
+  day 7: PHYSICS
+
+Contents of error.log (repaired program):
+  2026-11-11 09:22:48,477 ERROR day 4 record 1 is damaged: None
+  Traceback (most recent call last):
+    File "/home/claude/CSA08-1911260289-Assignment4/Task04/library.py", line 29, in add_returns_fixed
+      f.write(f"day {day}: {title.upper()}\n")
+                            ^^^^^^^^^^^
+  AttributeError: 'NoneType' object has no attribute 'upper'
+
+lines in library_fixed.txt: 14
